@@ -58,7 +58,7 @@ lang="ru"
     </div>
     {% block scripts %}
     {{super()}}
-    <script src="{{js_file_name}}">
+    <script src="{{ url_for('.static', filename='styles/'js_file_name) }}">
     </script>
     {% endblock scripts %}
     {% endblock body %}
