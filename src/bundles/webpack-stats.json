@@ -9,9 +9,9 @@
       "name": "..\\dist\\manifest.json",
       "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\static\\dist\\manifest.json"
     },
-    "main-main-a4d53f853b37acef5072.js": {
-      "name": "main-main-a4d53f853b37acef5072.js",
-      "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\static\\scripts\\main-main-a4d53f853b37acef5072.js"
+    "main-main-d6a041f7eb54b4c8472c.js": {
+      "name": "main-main-d6a041f7eb54b4c8472c.js",
+      "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\static\\scripts\\main-main-d6a041f7eb54b4c8472c.js"
     },
     "manifest.json": {
       "name": "manifest.json",
@@ -21,7 +21,7 @@
   },
   "chunks": {
     "main": [
-      "main-main-a4d53f853b37acef5072.js"
+      "main-main-d6a041f7eb54b4c8472c.js"
     ]
   }
 }
