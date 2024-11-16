@@ -18,15 +18,24 @@
             </ul>
           {% endif %}
         {% endwith %}
-        <form id="smsForm">
-            {{ csrf_token }}
-            <label for="number">Номер телефона:</label>
-            <input type="text" id="number" name="number" placeholder="+79123456789" required><br><br>
+        <form id="smsForm" method="POST">
+          {{ form.csrf_token }}
+          <div class="form-group">
+            {{ form.mobil_number.label(class="form-check-label") }}
+            {{ form.mobil_number() }}
+            {% for error in form.mobil_number.errors %}
+            <div class="text-danger">{{ error }}</div>
+            {% endfor %}
+          </div>
 
-            <label for="text">Текст сообщения:</label>
-            <textarea id="text" name="text" placeholder="Введите текст сообщения..." required></textarea><br><br>
-            <input type="hidden" name="csrf_token" value="{{ <flask_wtf.csrf.CSRFProtect object at 0x000001EE5F5B8430> }}">
-            <button type="submit">Отправить SMS</button>
+          <div class="form-group">
+            {{ form.text_message.label(class="form-check-label") }}
+            {{ form.text_message() }}
+            {% for error in form.text_message.errors %}
+            <div class="text-danger">{{ error }}</div>
+            {% endfor %}
+          </div>
+          {{ form.submit() }}
         </form>
     </div>
 
