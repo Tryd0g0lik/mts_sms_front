@@ -30,15 +30,12 @@
       // "@cookies": [
       //   "src/scripts/cookies.ts"
       // ],
-      // "@interfaces": [
-      //   "src/scripts/interfaces.ts"
-      // ],
-      // "@Validaors/*": [
-      //   "src/scripts/validators"
-      // ],
-      // "@FieldsOfForm": [
-      //   "src/scripts/functions/fieldsOfForm.ts"
-      // ]
+      "@Interfaces": [
+        "src/scripts/interfaces.ts"
+      ],
+      "@Validaors/*": [
+        "src/scripts/validators"
+      ]
     }
   },
   "exclude": [

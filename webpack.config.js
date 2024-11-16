@@ -67,11 +67,6 @@ module.exports = {
 
 
   plugins: [
-    // new webpack.DefinePlugin({
-    //   'process.env.APP_SERVER_PORT': JSON.stringify(process.env.APP_SERVER_PORT),
-    //   'process.env.APP_SERVER_HOST': JSON.stringify(process.env.APP_SERVER_HOST),
-    //   'process.env.APP_ACCOUNTS_PATHNAME': JSON.stringify(process.env.APP_ACCOUNTS_PATHNAME),
-    // }),
     new Dotenv({
       path: ".env"
     }),
@@ -130,8 +125,8 @@ module.exports = {
 
     alias: {
       // '@cookies': path.resolve(__dirname, 'src/scripts/cookies.ts'),
-      // '@interfaces': path.resolve(__dirname, "src/scripts/interfaces.ts"),
-      // '@Validaors': path.resolve(__dirname, 'src/scripts/validators'),
+      '@Interfaces': path.resolve(__dirname, "src/scripts/interfaces.ts"),
+      '@Validaors': path.resolve(__dirname, 'src/scripts/validators'),
     }
   },
 
