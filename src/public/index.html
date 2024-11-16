@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Отправка SMS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Отправка SMS</h1>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul class="flashes">
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        <form id="smsForm">
+            {{ csrf_token }}
+            <label for="number">Номер телефона:</label>
+            <input type="text" id="number" name="number" placeholder="+79123456789" required><br><br>
+
+            <label for="text">Текст сообщения:</label>
+            <textarea id="text" name="text" placeholder="Введите текст сообщения..." required></textarea><br><br>
+            <input type="hidden" name="csrf_token" value="{{ <flask_wtf.csrf.CSRFProtect object at 0x000001EE5F5B8430> }}">
+            <button type="submit">Отправить SMS</button>
+        </form>
+    </div>
+
+</body>
+</html>

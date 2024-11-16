@@ -1,0 +1,48 @@
+// https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "ES6",
+    "target": "ES2020",
+    "rootDirs": [
+      "./src/scripts"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    // "noImplicitReturns": true,
+    // "noUnusedLocals": false,
+    // "allowSyntheticDefaultImports": true,
+    // "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,
+    // "strict": true,
+    // "noImplicitAny": true,
+    // "strictPropertyInitialization": false,
+    // "skipLibCheck": true,
+    // "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      // "@cookies": [
+      //   "src/scripts/cookies.ts"
+      // ],
+      // "@interfaces": [
+      //   "src/scripts/interfaces.ts"
+      // ],
+      // "@Validaors/*": [
+      //   "src/scripts/validators"
+      // ],
+      // "@FieldsOfForm": [
+      //   "src/scripts/functions/fieldsOfForm.ts"
+      // ]
+    }
+  },
+  "exclude": [
+    "./node_modules/**/*.js",
+    "*.config.js",
+  ]
+}
