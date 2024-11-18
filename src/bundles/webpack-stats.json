@@ -5,13 +5,17 @@
       "name": "../../templates/index.html",
       "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\templates\\index.html"
     },
+    "../styles/style.css": {
+      "name": "../styles/style.css",
+      "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\static\\styles\\style.css"
+    },
     "..\\dist\\manifest.json": {
       "name": "..\\dist\\manifest.json",
       "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\static\\dist\\manifest.json"
     },
-    "main-main-3b2d6b287278dc05d70c.js": {
-      "name": "main-main-3b2d6b287278dc05d70c.js",
-      "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\static\\scripts\\main-main-3b2d6b287278dc05d70c.js"
+    "main-792-51352717b8978e745511.js": {
+      "name": "main-792-51352717b8978e745511.js",
+      "path": "E:\\OpenServer\\domains\\t-Py-Flask-mts\\sms-project\\sms_postman\\static\\scripts\\main-792-51352717b8978e745511.js"
     },
     "manifest.json": {
       "name": "manifest.json",
@@ -21,7 +25,8 @@
   },
   "chunks": {
     "main": [
-      "main-main-3b2d6b287278dc05d70c.js"
+      "../styles/style.css",
+      "main-792-51352717b8978e745511.js"
     ]
   }
 }
